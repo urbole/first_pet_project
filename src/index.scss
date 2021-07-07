@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic');
+
+body {
+  height: 100vh;
+  background-image: url('./assets/img/bg.jpg');
+  background-repeat: repeat, no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  // overflow:scroll;
+
+  // &::-webkit-scrollbar { 
+  //   width: 0px; 
+  //   background: transparent;  
+  // }
+
+  &,
+  input,
+  textarea,
+  select {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: #777777;
+    font-size: 1.5em;
+    line-height: 1.5em;
+
+    @media screen and (min-width: 1680px) {
+      font-size: 1.75em;
+    }
+
+    @media screen and (max-width: 1280px) {
+      font-size: 1.3em;
+    }
+
+    @media screen and (max-width: 1086px) {
+      font-size: 1.2em;
+    }
+
+    @media screen and (max-width: 736px) {
+      font-size: 1.1em;
+    }
+
+    @media screen and (max-width: 360px) {
+      font-size: 1em;
+    }
+  }
+}

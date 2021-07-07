@@ -1,0 +1,13 @@
+<picture>
+<img
+sizes="(max-width: 768px) 100vw, 768px"
+srcset="
+home-page_big_xshyon_c_scale,w_200.jpg 200w,
+home-page_big_xshyon_c_scale,w_398.jpg 398w,
+home-page_big_xshyon_c_scale,w_556.jpg 556w,
+home-page_big_xshyon_c_scale,w_681.jpg 681w,
+home-page_big_xshyon_c_scale,w_767.jpg 767w,
+home-page_big_xshyon_c_scale,w_768.jpg 768w"
+src="home-page_big_xshyon_c_scale,w_768.jpg"
+alt="">
+</picture>

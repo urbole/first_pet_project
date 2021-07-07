@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic');
+
+.App {
+  width: 45em;
+  margin: 0 auto;
+  // min-height: 100vh;
+  max-width: 100%;
+  padding: 1em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__header {
+    text-align: center;
+    height: 3.7em;
+    cursor: default;
+
+    a {
+      position: relative;
+      display: inline-block;
+      color: #ffffff;
+      width: 1em;
+      height: 1em;
+      line-height: 0.9em;
+      font-size: 2.5em;
+      margin: 0 0.25em 0 0.25em;
+      outline: 0;
+      transition: opacity .25s ease-in-out;
+
+      & svg {
+        font-size: 0.8em;
+      }
+
+      &:hover svg {
+        fill: #fff;
+        transition: fill .3s ease-in;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 37%;
+        bottom: -.5em;
+        margin-left: -.15em;
+        border-bottom: solid 0em #ffffff;
+        border-left: solid .3em transparent;
+        border-right: solid .3em transparent;
+        transition: border-bottom-width .25s ease-in-out;
+      }
+
+      &.active svg {
+        fill: #fff;
+      }
+
+      &.active::after {
+        border-bottom-width: .3em;
+      }
+    }
+
+    svg {
+      fill: #F1CDC2;
+      transition: fill .3s ease-in;
+    }
+  }
+
+  &__main {
+    width: 100%;
+    background-color: white;
+    border-bottom: solid 1px #A98075;
+  }
+
+  &__footer {
+    color: rgba(255, 255, 255, 0.45);
+    text-align: center;
+    padding-top: 2em;
+    font-size: 0.75em;
+    margin-bottom: 2em;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      list-style: none;
+
+      a {
+        color: #fff;
+      }
+
+      span {
+        margin: 0 1em;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1680px) {
+    padding: 2em 0;
+    max-width: calc(100% - 6em);
+  }
+
+  @media screen and (max-width: 1280px) {
+    padding: 1.5em 0;
+    max-width: calc(100% - 8em);
+  }
+
+  @media screen and (max-width: 1086px) {
+    padding: 1.2em 0;
+    max-width: calc(100% - 8em);
+  }
+
+  @media screen and (max-width: 736px) {
+    padding: 1em 0;
+    max-width: calc(100% - 2em);
+  }
+
+  @media screen and (max-width: 360px) {
+    padding: 1em 0;
+    max-width: 100%;
+  }
+}
